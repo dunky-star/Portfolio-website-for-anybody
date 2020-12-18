@@ -10,11 +10,11 @@ $(document).ready(function(){
 	$('#slides').superslides({
 		animation: 'fade',
 		play: 5000,
-		pagination: true
+		pagination: false
 	});
 
 	var typed = new Typed(".typed", {
-		strings: ["Developer, Innovator.", "Techpreneur,  Graduate student.", " AI/Big Data Enthusiast."],
+		strings: ["Developer, Innovator.", "Techpreneur.", " AI/Big Data Enthusiast."],
 	    typeSpeed: 70,
 	    loop: true,
 	    startDelay: 1000,
