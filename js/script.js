@@ -2,6 +2,16 @@ $(window).on("load", function(){
 	$(".loader .inner").fadeOut(100, function(){
 		$(".loader").fadeOut(750);
 	});
+	$(".items").isotope({
+		filter: '*',
+		transitionDuration: '0.8s',
+		animationOptions:{
+			duration: 1500,
+		    easing: 'linear',
+		    queue: false
+		}
+		
+	});
 })
 
 
@@ -97,17 +107,6 @@ $(document).ready(function(){
         hideScrollbar: false
 	});
 	
-
-	$(".items").isotope({
-		filter: '*',
-		transitionDuration: '0.8s',
-		animationOptions:{
-			duration: 1500,
-		    easing: 'linear',
-		    queue: false
-		}
-		
-	});
 
 	$("#filters a").click(function() {
 		
